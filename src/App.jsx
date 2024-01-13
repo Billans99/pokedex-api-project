@@ -43,11 +43,11 @@ function App() {
     pokeFun()
   }, [url])
 
-  const loadLessPokemon = () => {
+  const loadPreviousPokemon = () => {
     setUrl(prevUrl)
   }
 
-  const loadMorePokemon = () => {
+  const loadNextPokemon = () => {
     setUrl(nextUrl)
   }
 
@@ -56,18 +56,9 @@ function App() {
       <Header/>
       <Search/>
       <Cards pokemon={pokeData} loading={loading}/>
-        {/* <div className="btns-container">
-          <button className="prev-btn" onClick={() => {
-                setUrl(prevUrl)
-               
-            }}>Previous</button>
-
-          <button className="next-btn" onClick={() => {
-                setUrl(nextUrl)
-             
-            }}>Next</button>
-        </div> */}
-      <Footer/>
+      <Footer 
+        loadPreviousPokemon={loadPreviousPokemon} 
+        loadNextPokemon={loadNextPokemon}/>
     </>
   )
 }
