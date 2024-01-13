@@ -1,7 +1,7 @@
 import Header from './Header.jsx'
 import Search from './Search.jsx'
 import Cards from './Cards.jsx'
-import Load from './Load.jsx'
+import Footer from './Footer.jsx'
 import axios from 'axios'
 
 import { useEffect, useState } from 'react'
@@ -43,12 +43,20 @@ function App() {
     pokeFun()
   }, [url])
 
+  const loadLessPokemon = () => {
+    setUrl(prevUrl)
+  }
+
+  const loadMorePokemon = () => {
+    setUrl(nextUrl)
+  }
+
   return (
     <>
       <Header/>
       <Search/>
       <Cards pokemon={pokeData} loading={loading}/>
-        <div className="btns-container">
+        {/* <div className="btns-container">
           <button className="prev-btn" onClick={() => {
                 setUrl(prevUrl)
                
@@ -58,8 +66,8 @@ function App() {
                 setUrl(nextUrl)
              
             }}>Next</button>
-        </div>
-      <Load/>
+        </div> */}
+      <Footer/>
     </>
   )
 }
