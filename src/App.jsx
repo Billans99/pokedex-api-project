@@ -54,7 +54,7 @@ function App() {
   return (
     <>
       <Header/>
-      <Search/>
+      {/* <Search/> */}
       <Cards pokemon={pokeData} loading={loading}/>
       <Footer 
         loadPreviousPokemon={loadPreviousPokemon} 
@@ -62,7 +62,5 @@ function App() {
     </>
   )
 }
-
-// testing remote repo comment 
 
 export default App

@@ -146,7 +146,7 @@ h1{
 
 /* On hover, card will display more pokemon info */
 .info-container:hover{
-  max-height: 150px;
+  max-height: 700px;
 }
 
 .info-container{
