@@ -6,7 +6,7 @@ import axios from 'axios'
 
 import { useEffect, useState } from 'react'
 
-function App() {
+const App = () => {
 
   const [pokeData, setPokeData] = useState([])
   const [loading, setLoading] = useState(false)

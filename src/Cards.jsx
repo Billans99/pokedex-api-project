@@ -4,7 +4,7 @@ import React from 'react'
 
 // Pokemon profile card: includes container, image, and type
 
-function Cards({ pokemon, loading }) { 
+const Cards = ({ pokemon, loading }) => { 
     console.log(pokemon)
 
     return(
@@ -21,7 +21,12 @@ function Cards({ pokemon, loading }) {
                             <h2 className="id">{item.id}</h2>
                             <h3 className="name">{item.name}</h3>
                             {item.types.map((type) => <h3>{type.type.name}</h3>)}
-                            {item.abilities.map((ability) => <p>{ability.ability.name}</p>)}
+                            <p>Abilities -
+                                {item.abilities.map((ability) => <p>{ability.ability.name}</p>)}
+                            </p>
+                            {/* const abilityUrlArray = {item.abilities.map((ability) => ability.ability.url)} */}
+
+                             {/* {item.abilities.map((ability) => <p>{ability.ability.url}</p>)} */}
 
                         </div>
                     </div> 

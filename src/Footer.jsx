@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Footer(props) {
+const Footer = (props) => {
 console.log("props", props)
     return(
       <div className="btns-container">

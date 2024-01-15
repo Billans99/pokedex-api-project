@@ -1,5 +1,5 @@
 
-function Search() {
+const Search = () => {
 
     return(
         <>

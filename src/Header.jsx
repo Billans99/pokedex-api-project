@@ -2,7 +2,7 @@ import React from 'react'
 import logo from './assets/pokedex-paradise-logo.png'
 
 // Header used in all pages of the app, includes logo and brand name
-function Header() {
+const Header = () => {
     return(
         <>
             <div className="heading-container">
