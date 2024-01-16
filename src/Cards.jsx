@@ -66,7 +66,7 @@ const Cards = ({ pokemon, loading }) => {
                             <p className="typeInfo"> Type - </p>
                                 
 
-                            {item.types.map((type) => <p style={{ color: getTypeColor(type.type.name)}}>
+                            {item.types.map((type) => <p className="typeColor" style={{ color: getTypeColor(type.type.name)}}>
                                 {type.type.name}
                                 </p>
                                 )}
