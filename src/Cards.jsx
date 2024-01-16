@@ -7,6 +7,8 @@ import React from 'react'
 const Cards = ({ pokemon, loading }) => { 
     console.log(pokemon)
 
+    const abilityUrlArray = []
+
     return(
     <> 
     {
@@ -18,16 +20,20 @@ const Cards = ({ pokemon, loading }) => {
                         <img className="pokeImage" src={item.sprites.front_default} alt="Pokemon character image">
                         </img>
                         <div className="info-container">
-                            <h2 className="id">{item.id}</h2>
                             <h3 className="name">{item.name}</h3>
-                            {item.types.map((type) => <h3>{type.type.name}</h3>)}
-                            <p>Abilities -
+
+                            <p className="typeInfo"> Type -
+                                {item.types.map((type) => <p>{type.type.name}</p>)}
+                            </p>
+
+                            <p className="abilityInfo">Abilities -
                                 {item.abilities.map((ability) => <p>{ability.ability.name}</p>)}
                             </p>
-                            {/* const abilityUrlArray = {item.abilities.map((ability) => ability.ability.url)} */}
+                        
 
-                             {/* {item.abilities.map((ability) => <p>{ability.ability.url}</p>)} */}
+                        
 
+                            
                         </div>
                     </div> 
                 </>
