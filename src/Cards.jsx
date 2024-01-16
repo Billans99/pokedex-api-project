@@ -29,8 +29,10 @@ const Cards = ({ pokemon, loading }) => {
                             <p className="abilityInfo">Abilities -
                                 {item.abilities.map((ability) => <p>{ability.ability.name}</p>)}
                             </p>
-                        
 
+                            <p className="base-stats-container">Base stats -
+                                {item.stats.map((stat) => <p className="base-stats-info"> {stat.stat.name}: {stat.base_stat}</p>)}
+                            </p>
                         
 
                             
