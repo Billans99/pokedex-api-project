@@ -164,19 +164,22 @@ h1{
 
 .abilityInfo{
   font-size: 1.2rem;
-  color: #fff786;
   margin-top: 20px;
+}
+
+.abilityColor{
+  color: #fff786;
+  font-size: 1.2rem;
 }
 
 .base-stats-container{
   font-size: 1.2rem;
-  color: rgb(73, 193, 245);
   margin-top: 20px;
 }
 
 .base-stats-info{
- 
-
+  font-size: 1.2rem;
+  color: rgb(73, 193, 245);
 }
 
 .btns-container{
