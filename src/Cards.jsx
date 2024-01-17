@@ -55,6 +55,7 @@ const Cards = ({ pokemon, loading }) => {
         pokemon.map((item) => {
             return(
                 <>
+                {console.log("pokemon", pokemon)}
                     <div className="card-container"> 
 
                         <img className="pokeImage" src={item.sprites.front_default} alt="Pokemon character image">

@@ -131,7 +131,7 @@ h1{
 /* Pokemon profile information, remaining text hidden until hover */
 .info-container{
   padding-top: 5px;
-  max-height: 30px;
+  max-height: 35px;
   width: 400px;
   font-family:'Courier New', Courier, monospace;
   overflow: hidden;
@@ -153,32 +153,37 @@ h1{
 }
 
 .name{
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .typeInfo{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #ffffff;
   margin-top: 20px;
 }
 
+.typeColor{
+  font-size: 1.3rem;
+}
+
 .abilityInfo{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-top: 20px;
 }
 
 .abilityColor{
   color: #fff786;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .base-stats-container{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .base-stats-info{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: rgb(73, 193, 245);
 }
 
