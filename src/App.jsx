@@ -15,24 +15,6 @@ const App = () => {
   //  states for Footer component
   const [nextUrl, setNextUrl] = useState("")
   const [prevUrl, setPrevUrl] = useState("")
-  // states for Search component
-  const [searchTerm, setSearchTerm] = useState("")
-
-
-
-  // function for Search component (using props)
-  const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value)
-  }
-
-  const searchPokemon = async () => {
-    if (searchTerm === '') {
-      return
-    }
-  
-    const result = await axios.get(`https://pokeapi.co/api/v2/pokemon/${searchTerm.toLowerCase()}`)
-    setPokeData(result.data)
-  }
 
   const pokeFun=async () => {
     if (loading) return
@@ -82,7 +64,7 @@ const App = () => {
   return (
     <>
       <Header/>
-      <Search searchPokemon={searchPokemon}/>
+      {/* <Search/> */}
       <Cards 
       pokemon={pokeData} 
       loading={loading} 

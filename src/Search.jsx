@@ -7,10 +7,7 @@ const Search = (props) => {
         <div className="search-container">
             <p className="search-text">Search for Pokemon </p>
             <input className="search-bar" id="pokemon-search" type="text"></input>
-            <button className="search-btn" onClick={() => {
-                    props.searchPokemon()
-                    }
-                }>Search Pokemon</button>
+            <button className="search-btn">Search Pokemon</button>
         </div>
         </>
     )
