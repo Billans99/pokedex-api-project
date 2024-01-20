@@ -28,7 +28,7 @@ Place cursor on pokemon names to reveal more information such as types, abilitie
 
 Each page displays 20 pokemon at a time
 
-The "Previous" button at the footer of the page will take you back to the previous browsing page, but will do nothing if you are currently in the initial page.
+The "Previous" button at the footer of the page will take you back to the previous browsing page, but is not displayed if you are in the initial page.
 
 The "Next" button located in the footer of the page will display the next 20 pokemon in the pokedex. 
 (note: The pokemon are in ascending order of the official pokedex)

@@ -71,7 +71,8 @@ const App = () => {
       />
       <Footer 
         loadPreviousPokemon={loadPreviousPokemon} 
-        loadNextPokemon={loadNextPokemon}/>
+        loadNextPokemon={loadNextPokemon}
+        prevUrl={prevUrl}/>
     </>
   )
 }

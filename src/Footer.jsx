@@ -1,20 +1,21 @@
 import React from 'react'
 
 const Footer = (props) => {
-console.log("props", props)
-    return(
-      <div className="btns-container">
-        {/* On click, runs loadLessPokemon function */}
-            <button className="prev-btn" onClick={() => {
-                  props.loadPreviousPokemon()
-              }}>Previous</button>
+  return(
+    <div className="btns-container">
+      {/* On click, runs loadPreviousPokemon function */}
+      {props.prevUrl && 
+        <button className="prev-btn" onClick={props.loadPreviousPokemon}>
+          Previous
+        </button>
+      }
   
-        {/* On clock, runs loadMorePokemon function */}
-            <button className="next-btn" onClick={() => {
-                  props.loadNextPokemon() 
-              }}>Next</button>
-      </div>
-    )
+      {/* On click, runs loadNextPokemon function */}
+      <button className="next-btn" onClick={props.loadNextPokemon}>
+        Next
+      </button>
+    </div>
+  )
 }
 
 export default Footer
