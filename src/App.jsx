@@ -48,7 +48,6 @@ const App = () => {
 
   // function for loading previous pokemon (using props) in Footer component
   const loadPreviousPokemon = () => {
-    if (prevUrl === null) return
     setUrl(prevUrl)
   }
 
